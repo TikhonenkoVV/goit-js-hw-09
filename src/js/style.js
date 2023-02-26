@@ -55,10 +55,15 @@ export const styleBodyColor = () => {
     e.style.color = 'white';
   });
   const startButton = document.querySelector('[data-start]');
-  startButton.classList.add('button-allowed');
+  startButton.style.backgroundColor = 'rgb(37, 33, 33)';
+  startButton.style.cursor = 'pointer';
+  startButton.style.border = '2px solid #fff';
   startButton.style.borderTopLeftRadius = '25px';
   startButton.style.borderBottomLeftRadius = '25px';
   const stopButton = document.querySelector('[data-stop]');
+  stopButton.style.backgroundColor = '#d8d8d8';
+  stopButton.style.cursor = 'no-drop';
+  stopButton.style.border = '2px solid #fff';
   stopButton.style.borderTopRightRadius = '25px';
   stopButton.style.borderBottomRightRadius = '25px';
   stopButton.disabled = true;
