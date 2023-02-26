@@ -68,9 +68,9 @@ export const styleTimePicker = () => {
   document.body.style.display = 'grid';
   document.body.style.alignItems = 'center';
   document.body.style.justifyContent = 'center';
-  document.body.style.gridTemplateColumns = '250px 100px';
+  document.body.style.gridTemplateColumns = '300px 100px';
   document.body.style.gridAutoRows = 'minmax(25px, auto)';
-  document.body.style.gap = '10px';
+  document.body.style.gap = '20px';
   const timerInput = document.querySelector('#datetime-picker');
   timerInput.style.padding = '10px';
   timerInput.style.marginTop = 'auto';
@@ -87,9 +87,10 @@ export const styleTimePicker = () => {
   field.forEach(e => {
     e.style.textAlign = 'center';
     e.style.borderRadius = '5px';
-    e.style.padding = '5px';
-    e.style.backgroundImage =
-      'linear-gradient(rgb(248, 248, 248), rgb(161, 161, 161))';
+    e.style.border = '2px solid #fff';
+    e.style.padding = '10px';
+    e.style.color = '#fff';
+    e.style.backgroundColor = 'rgb(37, 33, 33)';
   });
   const valueSpan = document.querySelectorAll('.value');
   valueSpan.forEach(e => {
