@@ -73,9 +73,18 @@ export const styleTimePicker = () => {
   document.body.style.gap = '20px';
   const timerInput = document.querySelector('#datetime-picker');
   timerInput.style.padding = '10px';
+  timerInput.style.fontSize = '30px';
+  timerInput.style.color = '#fff';
+  timerInput.style.backgroundColor = 'rgb(37, 33, 33)';
+  timerInput.style.border = '2px solid #fff';
+  timerInput.style.borderRadius = '10px';
   timerInput.style.marginTop = 'auto';
   const startButton = document.querySelector('[data-start]');
-  startButton.style.height = '39px';
+  startButton.style.height = '58px';
+  startButton.style.color = '#fff';
+  startButton.style.border = '2px solid #fff';
+  startButton.style.borderRadius = '10px';
+  startButton.style.fontSize = '30px';
   startButton.style.marginTop = 'auto';
   const timer = document.querySelector('.timer');
   timer.style.gridColumnStart = '1';
@@ -100,7 +109,8 @@ export const styleTimePicker = () => {
   const labelSpan = document.querySelectorAll('.label');
   labelSpan.forEach(e => {
     e.style.display = 'block';
-    e.style.backgroundColor = 'rgb(206, 206, 206)';
+    e.style.color = 'rgb(37, 33, 33)';
+    e.style.backgroundColor = '#fff';
     e.style.borderRadius = '3px';
   });
 };
