@@ -129,6 +129,7 @@ const options = {
     enableTime: true,
     time_24hr: true,
     defaultDate: new Date(),
+    maxDate: new Date().fp_incr(90),
     minuteIncrement: 1,
     onClose(selectedDates) {
         const currentDate = new Date().getTime();
