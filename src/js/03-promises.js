@@ -41,7 +41,6 @@ const onFormSubmit = e => {
                 Notify.failure(`Rejected promise ${position} in ${delay}ms`);
             });
         promiseStep += +step.value;
-        console.log(promiseStep);
     }
 };
 

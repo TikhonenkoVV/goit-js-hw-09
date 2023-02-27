@@ -97,7 +97,6 @@ const onStartButtonClick = e => {
     timerId = setInterval(() => {
         const newDate = new Date().getTime();
         const ms = currentDate - newDate;
-        // console.log(convertMs(ms));
         if (ms >= 0) flipAllCards(ms);
         else {
             clearInterval(timerId);
